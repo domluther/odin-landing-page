@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,8 +7,16 @@
 body {
   /* Default font is roboto */
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
+
+  /* Main page is 5 divs stacked on top of each other so I don't need this?*/
+  /* display: flex;
+  flex-direction: column; */
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
 }
 
 .hero {
@@ -21,21 +28,45 @@ body {
 }
 
 .hero-content {
-  flex: 0 0 1000px;
+  /* Makes flexible */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 60em;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 1em 0;
+}
+
+/* Used in the header logo and banner header */
+.medium-header {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bolder;
+}
+
+.links {
+  /* This is to make them appear at the right side of the navbar */
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  /* Remove bullet points from links */
+  list-style: none;
 }
 
 .hero-main {
+  /* Used to split text on left + image on right */
   display: flex;
-  gap: 75px;
-  margin: 50px 0px;
+  justify-content: space-between;
+  gap: 5em;
+  margin: 4em 0px;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: bolder;
-  color: #f9faf8;
-}
-
+/* Smaller text - used in hero main and banner text */
 .secondary-text {
   text-decoration: none;
   font-size: 18px;
@@ -43,47 +74,29 @@ h1 {
   margin: 5px 0px;
 }
 
-li {
-  list-style: none;
-}
-
-.links {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.header .logo,
-.banner .title {
-  font-size: 24px;
-  color: #f9faf8;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
+/* Second section - Content */
 .content,
 .section {
   background-color: white;
 }
 
-h2 {
+/* Used for title of content */
+.content-title {
   text-align: center;
   padding: 30px;
   color: #1f2937;
   font-size: 36px;
   font-weight: bolder;
 }
-
+/* Collection of images */
 .images {
   display: flex;
-  justify-content: center;
-  gap: 52px;
-  padding-bottom: 100px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 4em;
+  padding-bottom: 6em;
 }
+/* each individual image is a fixed size */
 .image {
   flex: 0 0 100px;
   text-align: center;
@@ -96,32 +109,23 @@ h2 {
   border-radius: 10px;
 }
 
-.section {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+.code {
+  font-family: monospace;
 }
 
+/* Quote part */
 .quote-section {
   background-color: #e5e7eb;
   display: flex;
   justify-content: center;
 }
-.quote-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 80px;
-  /* To make it centralised */
-  flex: 0 0 800px;
-}
 
-.author {
-  align-self: flex-end;
-  color: #1f2937;
-  font-size: 36px;
-  font-weight: bolder;
+.quote-block {
+  /* To make it centralised and flexible */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 50em;
+  padding: 4em;
 }
 
 .quote {
@@ -131,32 +135,52 @@ h2 {
   font-weight: lighter;
 }
 
+.author {
+  align-self: flex-end;
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
+  /* Instead of making this a separate flexbox, just align the text */
+  text-align: right;
+}
+
+/* Final section - content needs to be centered vertically and horizontally */
+.section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .banner {
   background-color: #3882f6;
-  padding: 40px 100px;
-  margin: 60px;
+  padding: 3em 9em;
+  margin: 5em;
   display: flex;
-  gap: 100px;
+  gap: 7em;
   /* Rounded corners */
-  border-radius: 10px;
+  border-radius: 0.5em;
 }
 
-.banner-content {
-  flex-direction: column;
-}
+.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
 
-button {
   background-color: #3882f6;
   color: white;
   font-size: medium;
-  padding: 5px 25px;
+  padding: 0.25em 1.5em;
   /* Rounded corners */
-  border-radius: 10px;
+  border-radius: 0.5em;
   border: none;
+  text-decoration: none;
+  font-weight: 400;
 }
 
-.banner button {
+/* As the other button but with a white border */
+.banner .button {
   border: 3px solid white;
+  align-self: center;
 }
 
 .footer {

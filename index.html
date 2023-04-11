@@ -3,89 +3,100 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Odin Landing Page</title>
+    <title>The Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="hero">
       <div class="hero-content">
-        <div class="header">
-          <div class="logo">Header Logo</div>
+        <div class="navbar">
+          <p class="medium-header">Flexbox Fun</p>
           <ul class="links">
             <li>
-              <a href="https://www.google.com" class="secondary-text"
-                >header link one</a
+              <a href="https://flexbox.malven.co/" class="secondary-text"
+                >Flexbox cheatsheet</a
               >
             </li>
             <li>
-              <a href="https://www.google.com" class="secondary-text"
-                >header link two</a
+              <a href="https://flexboxfroggy.com" class="secondary-text"
+                >Flexbox Froggy</a
               >
             </li>
             <li>
-              <a href="https://www.google.com" class="secondary-text"
-                >header link three</a
+              <a
+                href="https://www.theodinproject.com/lessons/foundations-landing-page"
+                class="secondary-text"
+                >Odin Project</a
               >
             </li>
           </ul>
         </div>
         <div class="hero-main">
           <div class="hero-left">
-            <h1>This website is awesome</h1>
+            <h1>Adventures with Flexbox</h1>
             <p class="secondary-text">
-              This website has some subtext that goes here under the main title.
-              It's a smaller title and the color is lower contrast.
+              This page was put together with love, care and Flexbox. It
+              reminded me that while divs are useful, other elements are too.
+              <br />I also learnt that not <strong>everything</strong> needs to
+              be get <span class="code">display:flex</span> applied to it.
             </p>
-            <button type="button">Sign up.</button>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+              class="button"
+              >Click me</a
+            >
           </div>
-          <div class="hero-right">
-            <img src="img/awesome.jpg" height="250" width="500" />
-          </div>
+          <img src="img/awesome.jpg" height="250" width="500" />
         </div>
       </div>
     </div>
     <div class="content">
-      <h2>Some random information</h2>
+      <h2 class="content-title">Flexbox properties - justify-content</h2>
       <div class="images">
         <div class="image">
-          <img height="150" width="150" />
-          this is some subtext under an illustration or image
+          <img height="150" width="150" src="img/flex-start.png" />
+          <p>flex-start</p>
         </div>
         <div class="image">
-          <img height="150" width="150" />
-          this is some subtext under an illustration or image
+          <img height="150" width="150" src="img/flex-end.png" />
+          <p>flex-end</p>
         </div>
         <div class="image">
-          <img height="150" width="150" />
-          this is some subtext under an illustration or image
+          <img height="150" width="150" src="img/center.png" />
+          <p>center</p>
         </div>
         <div class="image">
-          <img height="150" width="150" />
-          this is some subtext under an illustration or image
+          <img height="150" width="150" src="img/space-between.png" />
+          <p>space-between</p>
         </div>
       </div>
     </div>
     <div class="quote-section">
       <div class="quote-block">
-        <div class="quote">
-          This is an inspiring quote, or a testimonial from a customer. Maybe
-          it's just filling up space, or maybe people will actually read it. Who
-          knows? All I know is that it looks nice.
-        </div>
-        <div class="author">-Thor, God of Thunder</div>
+        <p class="quote">
+          Flexbox is a game-changer for web developers, allowing for effortless
+          layout control and responsive designs. It's amazing how much time and
+          frustration it saves!
+        </p>
+        <p class="author">- A developer</p>
       </div>
     </div>
     <div class="section">
       <div class="banner">
         <div class="banner-content">
-          <div class="title">Call to action! It's time!</div>
+          <p class="medium-header">Call to action! It's time!</p>
           <p class="secondary-text">
-            Sign up for our product by clicking that button right over there!
+            Go and learn more about Flexbox today! Click the button to find out
+            more.
           </p>
         </div>
-        <button type="button">Sign up.</button>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+          class="button"
+          >Click me</a
+        >
       </div>
     </div>
-    <div class="footer">Copyright © The Odin Project 2021</div>
+    <div class="footer">Copyright © The Odin Project 2023</div>
   </body>
 </html>
