@@ -15,22 +15,34 @@ body {
 .hero {
   background-color: #1f2937;
   color: white;
-  padding: 20px 250px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
 }
 
-.hero .main {
+.hero-content {
+  flex: 0 0 1000px;
+}
+
+.hero-main {
+  display: flex;
+  gap: 75px;
+  margin: 50px 0px;
+}
+
+h1 {
   font-size: 48px;
   font-weight: bolder;
   color: #f9faf8;
 }
 
-.hero .secondary,
-.header a,
-.banner-text {
+.secondary-text {
   text-decoration: none;
   font-size: 18px;
   color: #e5e7eb;
+  margin: 5px 0px;
 }
+
 li {
   list-style: none;
 }
@@ -57,7 +69,7 @@ li {
   background-color: white;
 }
 
-h1 {
+h2 {
   text-align: center;
   padding: 30px;
   color: #1f2937;
@@ -70,6 +82,7 @@ h1 {
   justify-content: center;
   gap: 52px;
   padding-bottom: 100px;
+  flex-wrap: wrap;
 }
 .image {
   flex: 0 0 100px;
@@ -89,14 +102,19 @@ h1 {
   justify-content: center;
 }
 
-.quote-block {
-  /* Some kind of max width to make it centralised */
+.quote-section {
   background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+}
+.quote-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 300px;
+  padding: 80px;
+  /* To make it centralised */
+  flex: 0 0 800px;
 }
 
 .author {
@@ -110,6 +128,7 @@ h1 {
   font-size: 36px;
   color: #1f2937;
   font-style: italic;
+  font-weight: lighter;
 }
 
 .banner {
@@ -126,14 +145,18 @@ h1 {
   flex-direction: column;
 }
 
-.banner button {
+button {
   background-color: #3882f6;
   color: white;
   font-size: medium;
-  padding: 2px 20px;
-  border: 3px solid white;
+  padding: 5px 25px;
   /* Rounded corners */
   border-radius: 10px;
+  border: none;
+}
+
+.banner button {
+  border: 3px solid white;
 }
 
 .footer {
