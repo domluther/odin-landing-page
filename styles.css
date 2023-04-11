@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* Default font is roboto */
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background-color: #1f2937;
+  color: white;
+  padding: 20px 250px;
+}
+
+.hero .main {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+.hero .secondary,
+.header a,
+.banner-text {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+li {
+  list-style: none;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.header .logo,
+.banner .title {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content,
+.section {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  padding-bottom: 100px;
+}
+.image {
+  flex: 0 0 100px;
+  text-align: center;
+  font-size: medium;
+  color: #1f2937;
+}
+
+.image img {
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+}
+
+.section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.quote-block {
+  /* Some kind of max width to make it centralised */
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 300px;
+}
+
+.author {
+  align-self: flex-end;
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.quote {
+  font-size: 36px;
+  color: #1f2937;
+  font-style: italic;
+}
+
+.banner {
+  background-color: #3882f6;
+  padding: 40px 100px;
+  margin: 60px;
+  display: flex;
+  gap: 100px;
+  /* Rounded corners */
+  border-radius: 10px;
+}
+
+.banner-content {
+  flex-direction: column;
+}
+
+.banner button {
+  background-color: #3882f6;
+  color: white;
+  font-size: medium;
+  padding: 2px 20px;
+  border: 3px solid white;
+  /* Rounded corners */
+  border-radius: 10px;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #1f2937;
+}
