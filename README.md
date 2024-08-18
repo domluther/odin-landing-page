@@ -1,5 +1,7 @@
 # odin-landing-page
 
+https://domluther.github.io/odin-landing-page/
+
 Odin Project Foundations - Landing Page
 
 Used https://unsplash.com/ for images
